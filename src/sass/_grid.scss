@@ -30,7 +30,7 @@ sub {
     margin: 0
 }
 
-.t-container {
+.covers {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -38,7 +38,7 @@ sub {
     padding: 0
 }
 
-.t-container.flexx {
+.covers.flexx {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -46,7 +46,7 @@ sub {
     display: flex
 }
 
-.t-container_flex {
+.covers_flex {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -54,12 +54,12 @@ sub {
     display: flex
 }
 
-.t-container_100 {
+.covers_100 {
     width: 100%;
     padding: 0
 }
 
-.t-container_10 {
+.covers_10 {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -67,7 +67,7 @@ sub {
     padding: 0
 }
 
-.t-container_8 {
+.covers_8 {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -75,13 +75,13 @@ sub {
     padding: 0
 }
 
-.t-container:before,.t-container:after,.t-container_10:before,.t-container_10:after,.t-container_8:before,.t-container_8:after,.t-container_100:before,.t-container_100:after {
+.covers:before,.covers:after,.covers_10:before,.covers_10:after,.covers_8:before,.covers_8:after,.covers_100:before,.covers_100:after {
     display: table;
     content: " ";
     width: 0
 }
 
-.t-container:after,.t-container_10:after,.t-container_8:after,.t-container_100:after {
+.covers:after,.covers_10:after,.covers_8:after,.covers_100:after {
     clear: both
 }
 
@@ -288,16 +288,16 @@ sub {
 }
 
 @media screen and (max-width: 1200px) {
-    .t-container {
+    .covers {
         max-width:960px;
         padding: 0
     }
 
-    .t-container_10 {
+    .covers_10 {
         max-width: 780px
     }
 
-    .t-container_8 {
+    .covers_8 {
         max-width: 640px
     }
 
@@ -459,15 +459,15 @@ sub {
 }
 
 @media screen and (max-width: 960px) {
-    .t-container {
+    .covers {
         max-width:640px
     }
 
-    .t-container.flexx {
+    .covers.flexx {
         display: block
     }
 
-    .t-container_flex {
+    .covers_flex {
         display: block
     }
 

@@ -34,7 +34,7 @@
     }
 }
 
-.t-cover,.t-cover__carrier {
+.cover,.cover__carrier {
     height: 700px;
     width: 100%;
     background-size: cover;
@@ -49,51 +49,51 @@
     background-attachment: fixed
 }
 
-.t-cover {
+.cover {
     background-color: #000;
     overflow: hidden
 }
 
-.t-cover.t-cover__transparent {
+.cover.cover__transparent {
     background-color: transparent
 }
 
-// .t-cover__carrier {
+// .cover__carrier {
 //     //-moz-transform: unset
 // }
 
 @supports (-ms-ime-align:auto) {
-    .t-cover__carrier {
+    .cover__carrier {
         transform: unset
     }
 }
 
-.t-cover__carrier.loading {
+.cover__carrier.loading {
     opacity: 0
 }
 
-.t-cover__carrier[data-content-cover-bg=''].loading {
+.cover__carrier[data-contencover-bg=''].loading {
     opacity: 1!important
 }
 
-.t-cover__carrier.loaded {
+.cover__carrier.loaded {
     opacity: 1;
     transition: opacity 700ms
 }
 
 @media screen and (max-device-width: 1024px) {
-    .t-cover,.t-cover__carrier {
+    .cover,.cover__carrier {
         background-attachment:scroll
     }
 }
 
 @media print {
-    .t-cover,.t-cover__carrier {
+    .cover,.cover__carrier {
         background-attachment: scroll
     }
 }
 
-.t-cover__filter {
+.cover__filter {
     height: 700px;
     width: 100%;
     position: absolute;
@@ -101,7 +101,7 @@
     left: 0
 }
 
-.t-cover .t-container,.t-cover .t-container_10,.t-cover .t-container_100,.t-cover .t-container_8 {
+.cover .covers,.cover .covers_10,.cover .covers_100,.cover .covers_8 {
     position: absolute;
     top: 0;
     left: 0;
@@ -109,35 +109,35 @@
     right: 0
 }
 
-.t-cover__wrapper {
+.cover__wrapper {
     height: 700px;
     margin: 0 auto;
     width: 1200px
 }
 
-.t-cover__wrapper span.space {
+.cover__wrapper span.space {
     display: inline-block;
     height: 100%;
     width: 1px
 }
 
 @media screen and (max-width: 640px) {
-    .t-cover {
+    .cover {
         background-attachment:fixed
     }
 
-    .t-cover__carrier {
+    .cover__carrier {
         background-attachment: scroll!important;
         background-size: cover;
         background-position: center center
     }
 }
 
-.t-cover__arrow-wrapper_animated {
+.cover__arrow-wrapper_animated {
     animation: t-arrow-bottom 1.7s infinite ease
 }
 
-.t-cover__arrow {
+.cover__arrow {
     position: absolute;
     z-index: 9;
     bottom: 40px;
@@ -146,7 +146,7 @@
     text-align: center
 }
 
-.t-cover__arrow-wrapper {
+.cover__arrow-wrapper {
     display: inline-block;
     -webkit-transition: all ease-in-out .2s;
     -moz-transition: all ease-in-out .2s;
@@ -155,16 +155,16 @@
     cursor: pointer
 }
 
-.t-cover__arrow-wrapper:hover {
+.cover__arrow-wrapper:hover {
     opacity: .7
 }
 
-.t-cover__arrow-svg {
+.cover__arrow-svg {
     fill: #fff
 }
 
 @media screen and (max-width: 640px) {
-    .t-cover__arrow_mobile {
+    .cover__arrow_mobile {
         -moz-transform:scale(.7);
         -ms-transform: scale(.7);
         -webkit-transform: scale(.7);
@@ -172,7 +172,7 @@
         transform: scale(.7)
     }
 
-    .t-cover__arrow {
+    .cover__arrow {
         bottom: 14px
     }
 }
