@@ -51,7 +51,26 @@
 
 .cover {
     background-color: #000;
-    overflow: hidden
+    overflow: hidden;
+    &__carrier {
+        &-dubl {
+            height: 242px;
+        }
+    }
+    &__descr {
+        display: block;
+        margin: 0 auto;
+    }
+    &__calc {
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 15px;
+    }
 }
 
 .cover.cover__transparent {
@@ -134,7 +153,7 @@
 }
 
 .cover__arrow-wrapper_animated {
-    animation: t-arrow-bottom 1.7s infinite ease
+    animation: t-arrow-bottom 1.7s infinite ease;
 }
 
 .cover__arrow {

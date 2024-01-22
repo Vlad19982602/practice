@@ -27,6 +27,8 @@ body {
     z-index: 0;
 }
 
+
+
 .btnup {
     opacity: 0;
 	position: fixed;
@@ -41,44 +43,8 @@ body {
 	margin-left: 20px;
 	margin-top: calc(50% - 7px);
 }
-.long {
-    height: 4000px;
-}
 
-.menuToggle {
-    position: relative;
-    width: 40px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .menuToggle::before { 
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: var(--text);
-    transform: translateY(-12px);
-    box-shadow: 0 12px var(--text);
-  }
-  .menuToggle::after { 
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: var(--text);
-    transform: translateY(12px);
-  }
-  header.active .menuToggle::before { 
-    transform: rotate(45deg);
-    box-shadow: 0 0px var(--text);
-  }
-  header.active .menuToggle::after { 
-    transform: rotate(315deg);
-  }
-
+ 
 
 .covers:before, .covers:after {
     display: table;
@@ -90,4 +56,34 @@ div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, img, b, u, i, ce
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+#rec558005085 .tn-atom {
+  color: #252c35;
+  font-size: 36px;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+#rec558005085 .cover__btn {
+  width: 220px;
+  height: 52px;
+  font-size: 14px;
+  font-family: 'Open Sans',Arial,sans-serif;
+  line-height: 1.6;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-width: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #76b82a;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
