@@ -2,6 +2,7 @@
 @import './cover';
 @import './text';
 @import './grid';
+@import './animation';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
@@ -13,7 +14,7 @@
 }
 
 :root {
-    --body-bg: #36474f;
+    --body-bg: #edf7fc;
     --nav-link: #445964;
     --nav-hover: #546e7b;
     --header-bg: #4eb74c;
@@ -27,6 +28,9 @@ body {
     z-index: 0;
 }
 
+.t-col.t-col_12.t-prefix_.t-item.t-list__item::marker {
+  text-decoration: none;
+}
 
 
 .btnup {
@@ -86,4 +90,54 @@ div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, img, b, u, i, ce
   border-color: transparent;
   border-style: solid;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.cover__artboard-2 {
+  .cover__wrapper {
+    height: 100px;
+    justify-content:space-between;
+  }
+}
+
+
+.t-sbs-anim_started #sbs-558002361-1633692348327 {
+  animation: scaleProgress 2.5s linear forwards;
+  backface-visibility: hidden;
+}
+
+.progress {
+  background: linear-gradient(
+    to right,
+    red 20%,
+    orange 0,
+    orange 40%,
+    yellow 0,
+    yellow 60%,
+    lime 0,
+    lime 80%,
+    green 0
+  );
+  animation: clip auto steps(5) forwards;
+  animation-timeline: scroll();
+}
+
+@keyframes clip {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.t602__indicator {
+  width: 0%;
+  height: 4px;
+  background: #199c68;
+  position: fixed;
+  top: 0;
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+  z-index: 9999;
 }
