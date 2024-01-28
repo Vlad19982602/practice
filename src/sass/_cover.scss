@@ -72,6 +72,24 @@
     }
 }
 
+#rec558005085 .cover__btn {
+    width: 260px;
+    height: 52px;
+    font-size: 14px;
+    font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.6;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #76b82a;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  }
+
 .cover.cover__transparent {
     background-color: transparent
 }
@@ -129,7 +147,7 @@
 }
 
 .cover__wrapper {
-    height: 700px;
+    //height: 700px;
     margin: 0 auto;
     width: 1200px
 }
@@ -195,3 +213,71 @@
         bottom: 14px
     }
 }
+
+#rec558005085 .tn-atom {
+    color: #252c35;
+    font-size: 36px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1.8s ease 0s;
+  }
+  
+  #rec558005085 .tn-atom.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  
+  #rec558005085 .tn-atom-rec {
+    color: #252c35;
+    font-size: 36px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1.8s ease 0s;
+  }
+  
+  #rec558005085 .tn-atom-rec.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+
+  #rec557197229 .tn-atom-rec-2 {
+    color: #252c35;
+    font-size: 36px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1.8s ease 0s;
+  }
+  
+  #rec557197229 .tn-atom-rec-2.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  
+  
+  .cover__artboard-2 {
+    .cover__wrapper {
+      height: 100px;
+      justify-content:space-between;
+    }
+  }
